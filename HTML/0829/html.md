@@ -79,14 +79,14 @@
     - 소개 및 탐색에 도움을 주는 콘텐츠를 나타냄
     - 제목, 로고, 검색 폼, 작성자 이름 등의 요소도 포함할 수 있음
 
-    <img src="자습.assets/header.png" alt="header" style="zoom:50%;" />
+    <img src="html.assets/header.png" alt="header" style="zoom:50%;" />
 
   - `footer`
 
     - 가장 가까운 구획 콘텐츠나 구획 루트의 푸터를 나타냄
     - 일반적으로 구획의 작성자, 저작권 정보, 관련 문서 등의 내용을 담음
 
-    <img src="자습.assets/footer.png" alt="footer" style="zoom:50%;" />
+    <img src="html.assets/footer.png" alt="footer" style="zoom:50%;" />
 
   - `article`
 
@@ -100,7 +100,7 @@
 
         각각의 글이 article 요소가 되며 그 안에 또 여러 개의 section이 존재할 수 있음
 
-    <img src="자습.assets/aritcle.png" alt="aritcle" style="zoom:50%;" />
+    <img src="html.assets/aritcle.png" alt="aritcle" style="zoom:50%;" />
 
   - `section` : 일반 구획 요소
 
@@ -108,7 +108,7 @@
     - 더 적합한 의미를 가진 요소가 없을 때 사용
     - 보통 제목을 포함하지만 항상 그런 것은 아님
 
-    <img src="자습.assets/section.png" alt="section" style="zoom:50%;" />
+    <img src="html.assets/section.png" alt="section" style="zoom:50%;" />
 
   - `p`
 
@@ -125,7 +125,7 @@
       두 번째 문단입니다.</p>
     ```
 
-    <img src="자습.assets/p.png" alt="p" style="zoom:50%;" />
+    <img src="html.assets/p.png" alt="p" style="zoom:50%;" />
 
   - `div` : 콘텐츠 분할 요소
 
@@ -139,7 +139,7 @@
 
         문서의 특정 구역이 다른 언어임을 표시하는 등의 용도로 사용할 수 있음
 
-    <img src="자습.assets/div.png" alt="div" style="zoom:50%;" />
+    <img src="html.assets/div.png" alt="div" style="zoom:50%;" />
 
   - `span`
 
@@ -147,7 +147,7 @@
     - div와 매우 유사하지만 div는 블록 레벨 요소
     - 스타일을 적용하기 위해서 lang 등 어떤 특성의 값을 서로 공유하는 요소를 묶을 때 사용
 
-    <img src="자습.assets/span.png" alt="span" style="zoom:50%;" />
+    <img src="html.assets/span.png" alt="span" style="zoom:50%;" />
 
   - `img` : 이미지 삽입 요소
 
@@ -159,7 +159,7 @@
 
         또한 네트워크 오류, 콘텐츠 차단, 죽은 링크 등 이미지를 표시할 수 없는 경우에도 이 속성의 값을 대신 보여줌
 
-    <img src="자습.assets/img.png" alt="img" style="zoom:50%;" />
+    <img src="html.assets/img.png" alt="img" style="zoom:50%;" />
 
     - [참고 - MDN img 상세 설명](https://developer.mozilla.org/ko/docs/Web/HTML/Element/img)
 
@@ -168,7 +168,7 @@
     - 문서의 주요 내용과 간접적으로만 연관된 부분을 나타냄
     - 주로 사이드바 혹은 콜아웃 박스로 표현
 
-    <img src="자습.assets/aside.png" alt="aside" style="zoom:50%;" />
+    <img src="html.assets/aside.png" alt="aside" style="zoom:50%;" />
 
   - `audio`
 
@@ -176,7 +176,7 @@
     - src 특성 또는 source 요소를 사용해 한 개 이상의 오디오 소스를 지정할 수 있음
       - 다수를 지정한 경우 가장 적절한 소스를 브라우저가 고름
 
-    <img src="자습.assets/audio.png" alt="audio" style="zoom:50%;" />
+    <img src="html.assets/audio.png" alt="audio" style="zoom:50%;" />
 
     - [참고 - MDN audio 상세 설명](https://developer.mozilla.org/ko/docs/Web/HTML/Element/audio)
 
@@ -189,7 +189,7 @@
 
     - 다른 컨트롤에서 고를 수 있는 가능한, 혹은 추천하는 선택지를 나타내는 option 요소 여럿을 담음
 
-    <img src="자습.assets/datalist.png" alt="datalist" style="zoom:50%;" />
+    <img src="html.assets/datalist.png" alt="datalist" style="zoom:50%;" />
 
   - `details`
 
@@ -197,20 +197,20 @@
     - 요약이나 레이블은 summary 요소를 통해 제공할 수 있음
     - 보통 레이블 옆의 작은 삼각형이 돌아가면서 열림/닫힘 상태를 나타냄
 
-    <img src="자습.assets/details.png" alt="details" style="zoom:50%;" />
+    <img src="html.assets/details.png" alt="details" style="zoom:50%;" />
 
   - `embed`
 
     - 외부 어플리케이션이나 대화형 컨텐츠와의 통합점을 나타냄
 
-    <img src="자습.assets/embed.png" alt="embed" style="zoom:50%;" />
+    <img src="html.assets/embed.png" alt="embed" style="zoom:50%;" />
 
   - `nav` : 탐색 구획 요소
 
     - 문서의 부분 중 현재 페이지 내 또는 다른 페이지로의 링크를 보여주는 구획을 나타냄
     - 자주 쓰이는 예제는 메뉴, 목차, 색인
 
-    <img src="자습.assets/nav.png" alt="nav" style="zoom:50%;" />
+    <img src="html.assets/nav.png" alt="nav" style="zoom:50%;" />
 
   - `output` : 출력 요소
 
@@ -222,7 +222,7 @@
     - 어느 작업의 완료 정도를 나타냄
     - 주로 진행 표시줄의 형태를 띄움
 
-    <img src="자습.assets/progress.png" alt="progress" style="zoom:50%;" />
+    <img src="html.assets/progress.png" alt="progress" style="zoom:50%;" />
 
   - `video` : 비디오 삽입 요소
 
@@ -231,7 +231,7 @@
     - img 요소와 비슷하게 표시하고자 하는 미디어의 경로를 src 특성에 제공
     - 비디오의 너비와 높이, 자동재생과 반복 여부, 브라우저 기본 컨트롤 노출 여부 등 다른 정보도 특성을 통해 지정할 수 있음
 
-    <img src="자습.assets/video.png" alt="video" style="zoom:50%;" />
+    <img src="html.assets/video.png" alt="video" style="zoom:50%;" />
 
     - [참고 - MDN video 상세 설명](https://developer.mozilla.org/ko/docs/Web/HTML/Element/Video)
 
@@ -240,14 +240,14 @@
     - 정렬되지 않은 목록
     - 보통 불릿으로 표현
 
-    <img src="자습.assets/ul.png" alt="ul" style="zoom:50%;" />
+    <img src="html.assets/ul.png" alt="ul" style="zoom:50%;" />
 
   - `ol`
 
     - 정렬된 목록
     - 보통 숫자 목록으로 표현
 
-    <img src="자습.assets/ol.png" alt="ol" style="zoom:50%;" />
+    <img src="html.assets/ol.png" alt="ol" style="zoom:50%;" />
 
   - `li`
 
@@ -259,7 +259,7 @@
 
         정렬 목록에서는 숫자나 문자를 사용한 오름차순 카운터로 나타냄
 
-    <img src="자습.assets/li.png" alt="li" style="zoom:50%;" />
+    <img src="html.assets/li.png" alt="li" style="zoom:50%;" />
 
 
 
