@@ -1,0 +1,33 @@
+/* 아래에 CSS를 작성해주세요. */
+
+.title {
+    text-align: center;
+}
+.bespoke {
+    font-size: 12px;
+}
+.card {
+    margin: auto;
+    width: 900px;
+}
+.cardimg {
+    margin: 1rem;
+    width: 300px;
+    border-radius: 5%;
+    text-align: left;
+}
+.cardtitle {
+    font-size: 100%;
+    font-weight: bold;
+}
+.cardtext {
+    font-size: 70%;
+}
+.card2 {
+    float: left;
+    margin: 1rem;
+    width: 300px;
+    border-radius: 5%;
+    /* margin: auto; */
+    /* text-align: left; */
+}
