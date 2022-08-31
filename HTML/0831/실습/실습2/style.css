@@ -1,0 +1,41 @@
+/* 아래에 CSS를 작성해주세요. */
+
+.card {
+    margin: auto;
+    width: 900px;
+}
+.cardimg {
+    width: 300px;
+    border-radius: 1%;
+}
+.card2 {
+    width: 300px;
+    border-radius: 5%;
+}
+.storename {
+    margin: 0;
+    padding: 0;
+    color: rgb(156, 156, 156)
+}
+.sale {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+.color {
+    color: skyblue;
+}
+.review {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.color2 {
+    color: rgb(166, 166, 166)
+}
+.title {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
