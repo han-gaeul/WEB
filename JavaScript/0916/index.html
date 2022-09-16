@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fruits = ['딸기', '바나나', '메론']
+        // 1.
+        fruits.forEach(function(fruit) {
+            // 반복하면서 무엇을 할 건지..
+            console.log(fruit)
+        })
+        // 익명함수('딸기')
+        // 익명함수('바나나')
+        // 익명함수('메론')
+
+        // 1-1
+        fruits.forEach(function(fruit, idx, array, b) {
+            console.log(fruit, idx, array, b)
+        })
+        // 익명함수('딸기', 0, ['딸기', '바나나', '메론'], undefined)
+        // 익명함수('바나나', 1, ['딸기', '바나나', '메론'], undefined)
+        // 익명함수('메론', 2, ['딸기', '바나나', '메론'], undefined)
+        // idx는 이름, 다른 값으로도 변경 가능
+
+        // return값은 계속해서 익명함수('메론', 2, ['딸기', '바나나', '메론']) 출력
+        // 내가 console.log()에서 한 개만 사용하고 싶으면 한 개만,
+        // 두 개만 사용하고 싶으면 두 개만 사용해서 값을 받는다
+        // 초과한 값을 사용하고 싶으면 undefined 출력
+
+        // 2. array function
+        fruits.forEach( fruit => console.log(fruit))
+        // 3.
+        const print = function(a) {
+            console.log(a)
+        }
+        fruits.forEach(print)
+    </script>
+</body>
+</html>
