@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>정말 <span>중요한</span> 내용</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus distinctio dolor, facilis molestiae numquam laborum assumenda dolorum enim at accusantium adipisci voluptas, pariatur, explicabo veniam illum vero. Eum, sit.</p>
+
+    <script>
+        const h1 = document.querySelector('h1')
+        h1.addEventListener('copy', function(event) {
+            // event의 기본 동작을 막고 
+            event.preventDefault()
+            console.log('복사를 할 수 없습니다.')
+            // 
+        })
+
+        h1.addEventListener('click', function(event) {
+            event.preventDefault()
+            console.log(event.button)
+        })
+    </script>
+</body>
+</html>
