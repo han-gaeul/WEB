@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bonusContainer, .ballsContainer {
+            display: flex;
+        }
+        .bonusContainer div, .ballsContainer div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 800;
+            width:50px;
+            height:50px;
+            padding: 3px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>로또 추천 번호</h1>
+    <button id="lotto-btn">행운 번호</button>
+    <hr>
+    <div class="ballsContainer"></div>
+    <div id="result"></div>
+    <script>
+        const button = document.querySelector('#lotto-btn')
+        button.addEventListener('click', function() {
+            const allNumbers = Array(45).fill().map((el, i) => i + 1);
+            const randomNumbers = [];
+            for (let _ = 0; _ < 7; _++) {
+                const index = Math.floor(Math.random() * allNumbers.length); // 0 ~ 8
+                randomNumbers.push(allNumbers[index]);
+                allNumbers.splice(index, 1);
+            }
+        const ballNumbers = randomNumbers.slice(0, 6).sort((a, b) => a - b);
+
+        const $ballsContainer = document.querySelector(".ballsContainer");
+        const handleColors = (i) => {
+        if (i >= 40) return "#b0d840";
+            else if (i >= 30) return "#aaa";
+            else if (i >= 20) return "#ff7272";
+            else if (i >= 10) return "#69c8f2";
+            else if (i >= 1) return "#fbc400";
+            else return "gray";
+        };
+
+        const makeBall = (i, array) => {
+            const $ball = document.createElement("div");
+            $ball.textContent = array[i];
+            $ball.style.backgroundColor = handleColors(array[i]);
+            return $ball;
+        };
+        for (let i = 0; i < 7; i++) {
+            setTimeout(() => {
+                if (i < 6) $ballsContainer.append(makeBall(i, ballNumbers));
+            }, 500 * i);
+        }
+        })
+    </script>
+</html>
